@@ -3134,10 +3134,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Title: "\u63D0\u793A"
   m_Content: 
-  m_Menus:
-  - "\u8FD4\u56DE\u9996\u9875"
-  m_Scenes:
-  - Launch
+  m_Menus: []
+  m_Scenes: []
+  Mute: 1
+  Archive: "\u86C7\u53D8\u60CA\u9B42"
   OnTrigger1:
     m_PersistentCalls:
       m_Calls: []
@@ -3147,7 +3147,6 @@ MonoBehaviour:
   OnTrigger3:
     m_PersistentCalls:
       m_Calls: []
-  Mute: 1
 --- !u!4 &896377940
 Transform:
   m_ObjectHideFlags: 0
@@ -5312,7 +5311,6 @@ RectTransform:
   - {fileID: 164580278}
   - {fileID: 1167513184}
   - {fileID: 923269191}
-  - {fileID: 1634577566}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -5883,23 +5881,23 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 1362068340}
+    m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 3053300462147683022, guid: ff4803b4dc224434ba2c367edbc45d70, type: 3}
       propertyPath: m_Pivot.x
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3053300462147683022, guid: ff4803b4dc224434ba2c367edbc45d70, type: 3}
       propertyPath: m_Pivot.y
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3053300462147683022, guid: ff4803b4dc224434ba2c367edbc45d70, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3053300462147683022, guid: ff4803b4dc224434ba2c367edbc45d70, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3053300462147683022, guid: ff4803b4dc224434ba2c367edbc45d70, type: 3}
       propertyPath: m_AnchorMin.x
@@ -5935,15 +5933,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3053300462147683022, guid: ff4803b4dc224434ba2c367edbc45d70, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3053300462147683022, guid: ff4803b4dc224434ba2c367edbc45d70, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3053300462147683022, guid: ff4803b4dc224434ba2c367edbc45d70, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3053300462147683022, guid: ff4803b4dc224434ba2c367edbc45d70, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -5965,6 +5963,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6872426372743672129, guid: ff4803b4dc224434ba2c367edbc45d70, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7022336804905123538, guid: ff4803b4dc224434ba2c367edbc45d70, type: 3}
       propertyPath: m_Name
       value: GamePanel
@@ -5978,11 +5980,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ff4803b4dc224434ba2c367edbc45d70, type: 3}
---- !u!224 &1634577566 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 3053300462147683022, guid: ff4803b4dc224434ba2c367edbc45d70, type: 3}
-  m_PrefabInstance: {fileID: 1634577565}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1690003063
 GameObject:
   m_ObjectHideFlags: 0
@@ -7489,3 +7486,4 @@ SceneRoots:
   - {fileID: 209578767}
   - {fileID: 2000455525}
   - {fileID: 896377940}
+  - {fileID: 1634577565}

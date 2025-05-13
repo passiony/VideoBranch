@@ -8,11 +8,12 @@ public class MapPanel : MonoBehaviour
     public Button closeBtn;
     public static List<string> mapList = new List<string>();
     private Dictionary<string, GameObject> clouds;
+    AudioSource audioSource;
 
     void Awake()
     {
         closeBtn.onClick.AddListener(() => { gameObject.SetActive(false); });
-
+        audioSource = GetComponent<AudioSource>();
         clouds = new Dictionary<string, GameObject>();
         clouds["201"] = transform.Find("201").gameObject;
         clouds["202"] = transform.Find("202").gameObject;
@@ -23,6 +24,8 @@ public class MapPanel : MonoBehaviour
 
     private void OnEnable()
     {
+        if (audioSource)
+            audioSource.Play();
         foreach (var map in mapList)
         {
             if (clouds.ContainsKey(map))
@@ -31,7 +34,13 @@ public class MapPanel : MonoBehaviour
             }
         }
     }
-    
+
+    private void OnDisable()
+    {
+        if (audioSource)
+            audioSource.Stop();
+    }
+
     public static void LoadedMap(string scene)
     {
         mapList.Add(scene);

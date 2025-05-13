@@ -48,4 +48,10 @@ public class UIManager : MonoBehaviour
         menu.GetComponent<Dialog3DForm>()
             .ShowDialog(title, content, menus, callbacks);
     }
+
+    public static void ShowArchive(string name)
+    {
+        GameObject menu = Instantiate(Resources.Load<GameObject>("Forms/ArchiveForm"), Vector3.zero, Quaternion.identity);
+        menu.GetComponent<ArchiveForm>().ShowArchive(name);
+    }
 }

@@ -3631,7 +3631,6 @@ RectTransform:
   - {fileID: 582499622}
   - {fileID: 348586091}
   - {fileID: 1892435851}
-  - {fileID: 1630495418}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -5113,10 +5112,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Title: "\u63D0\u793A"
   m_Content: 
-  m_Menus:
-  - "\u8FD4\u56DE\u9996\u9875"
-  m_Scenes:
-  - Launch
+  m_Menus: []
+  m_Scenes: []
+  Mute: 0
+  Archive: "\u60C5\u6025\u751F\u7978"
   OnTrigger1:
     m_PersistentCalls:
       m_Calls: []
@@ -5126,7 +5125,6 @@ MonoBehaviour:
   OnTrigger3:
     m_PersistentCalls:
       m_Calls: []
-  Mute: 0
 --- !u!4 &1503614544
 Transform:
   m_ObjectHideFlags: 0
@@ -5584,23 +5582,23 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 978667815}
+    m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 3053300462147683022, guid: ff4803b4dc224434ba2c367edbc45d70, type: 3}
       propertyPath: m_Pivot.x
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3053300462147683022, guid: ff4803b4dc224434ba2c367edbc45d70, type: 3}
       propertyPath: m_Pivot.y
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3053300462147683022, guid: ff4803b4dc224434ba2c367edbc45d70, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3053300462147683022, guid: ff4803b4dc224434ba2c367edbc45d70, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3053300462147683022, guid: ff4803b4dc224434ba2c367edbc45d70, type: 3}
       propertyPath: m_AnchorMin.x
@@ -5636,15 +5634,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3053300462147683022, guid: ff4803b4dc224434ba2c367edbc45d70, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3053300462147683022, guid: ff4803b4dc224434ba2c367edbc45d70, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3053300462147683022, guid: ff4803b4dc224434ba2c367edbc45d70, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3053300462147683022, guid: ff4803b4dc224434ba2c367edbc45d70, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -5679,11 +5677,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ff4803b4dc224434ba2c367edbc45d70, type: 3}
---- !u!224 &1630495418 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 3053300462147683022, guid: ff4803b4dc224434ba2c367edbc45d70, type: 3}
-  m_PrefabInstance: {fileID: 1630495417}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1674562939
 GameObject:
   m_ObjectHideFlags: 0
@@ -7347,3 +7340,4 @@ SceneRoots:
   - {fileID: 734683718}
   - {fileID: 205367159}
   - {fileID: 1503614544}
+  - {fileID: 1630495417}

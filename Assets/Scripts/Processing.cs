@@ -11,12 +11,14 @@ public class Processing : MonoBehaviour
     public string m_Content = "";
     public string[] m_Menus;
     public string[] m_Scenes;
+    public bool Mute = true;
+    public string Archive = "";
+    
     public UnityEvent OnTrigger1;
     public UnityEvent OnTrigger2;
     public UnityEvent OnTrigger3;
 
     private MediaPlayer m_MediaPlayer;
-    public bool Mute = true;
 
     private void Awake()
     {
@@ -31,7 +33,7 @@ public class Processing : MonoBehaviour
         {
             for (int i = 0; i < 10; i++)
             {
-                yield return new WaitForSeconds(1);
+                yield return new WaitForEndOfFrame();
                 m_MediaPlayer.AudioMuted = true;
             }
         }
@@ -58,14 +60,7 @@ public class Processing : MonoBehaviour
     {
         if (m_Menus.Length == 0)
         {
-            UIManager.ShowDialog(m_Title, m_Content, new[] { "返回首页" }, new Action[]
-            {
-                () =>
-                {
-                    Debug.Log("返回首页");
-                    SceneManager.LoadScene(0);
-                }
-            });
+            UIManager.ShowArchive(Archive);
         }
 
         UIManager.ShowDialog(m_Title, m_Content, m_Menus, new Action[]
@@ -76,7 +71,7 @@ public class Processing : MonoBehaviour
                 OnTrigger1?.Invoke();
                 if (m_Scenes[0] == "Launch")
                     SceneManager.LoadScene(m_Scenes[0]);
-                else 
+                else
                     SceneManager.LoadScene("Game" + m_Scenes[0]);
                 MapPanel.LoadedMap(m_Scenes[0]);
             },

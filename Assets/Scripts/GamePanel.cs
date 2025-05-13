@@ -14,4 +14,5 @@ public class GamePanel : MonoBehaviour
         FindObjectOfType<MediaPlayer>().Loop = false;
         mapBtn.onClick.AddListener(() => { mapPanel.SetActive(true); });
     }
+
 }

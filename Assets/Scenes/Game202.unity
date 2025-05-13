@@ -2863,9 +2863,9 @@ MonoBehaviour:
   _autoOpen: 1
   _autoPlayOnStart: 1
   _loop: 1
-  _audioVolume: 1
+  _audioVolume: 0
   _audioBalance: 0
-  _audioMuted: 0
+  _audioMuted: 1
   _playbackRate: 1
   _useResampler: 0
   _resampleMode: 0
@@ -3334,7 +3334,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!82 &773269431
 AudioSource:
   m_ObjectHideFlags: 0
@@ -6246,7 +6246,7 @@ MonoBehaviour:
   OnTrigger2:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1732758461}
         m_TargetAssemblyTypeName: AngerManager, Assembly-CSharp
         m_MethodName: AddAnger
         m_Mode: 1
@@ -6967,7 +6967,6 @@ RectTransform:
   - {fileID: 1590841435}
   - {fileID: 1131932908}
   - {fileID: 689407323}
-  - {fileID: 2032754212}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -7246,23 +7245,23 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 1939506108}
+    m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 3053300462147683022, guid: ff4803b4dc224434ba2c367edbc45d70, type: 3}
       propertyPath: m_Pivot.x
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3053300462147683022, guid: ff4803b4dc224434ba2c367edbc45d70, type: 3}
       propertyPath: m_Pivot.y
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3053300462147683022, guid: ff4803b4dc224434ba2c367edbc45d70, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3053300462147683022, guid: ff4803b4dc224434ba2c367edbc45d70, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3053300462147683022, guid: ff4803b4dc224434ba2c367edbc45d70, type: 3}
       propertyPath: m_AnchorMin.x
@@ -7298,15 +7297,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3053300462147683022, guid: ff4803b4dc224434ba2c367edbc45d70, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3053300462147683022, guid: ff4803b4dc224434ba2c367edbc45d70, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3053300462147683022, guid: ff4803b4dc224434ba2c367edbc45d70, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3053300462147683022, guid: ff4803b4dc224434ba2c367edbc45d70, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -7332,20 +7331,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GamePanel
       objectReference: {fileID: 0}
-    - target: {fileID: 7022336804905123538, guid: ff4803b4dc224434ba2c367edbc45d70, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ff4803b4dc224434ba2c367edbc45d70, type: 3}
---- !u!224 &2032754212 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 3053300462147683022, guid: ff4803b4dc224434ba2c367edbc45d70, type: 3}
-  m_PrefabInstance: {fileID: 2032754211}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2068675043
 GameObject:
   m_ObjectHideFlags: 0
@@ -7550,3 +7540,4 @@ SceneRoots:
   - {fileID: 1614733292}
   - {fileID: 1732758462}
   - {fileID: 773269432}
+  - {fileID: 2032754211}

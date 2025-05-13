@@ -1,7 +1,7 @@
 using System;
+using DG.Tweening;
 using TMPro;
 using UnityEngine;
-using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 public class Dialog3DForm : MonoBehaviour
@@ -9,6 +9,7 @@ public class Dialog3DForm : MonoBehaviour
     private TextMeshProUGUI m_Title;
     private TextMeshProUGUI m_Content;
     private Button[] m_Buttons;
+    private CanvasGroup m_CanvasGroup;
 
     void Awake()
     {
@@ -19,11 +20,14 @@ public class Dialog3DForm : MonoBehaviour
         {
             m_Buttons[i] = transform.Find($"Root/Bottom/Menu{i + 1}").GetComponent<Button>();
         }
+        m_CanvasGroup = gameObject.GetComponent<CanvasGroup>();
+        m_CanvasGroup.alpha = 0;
     }
 
     void Start()
     {
-        EventSystem.current.SetSelectedGameObject(m_Buttons[0].gameObject);
+        // EventSystem.current.SetSelectedGameObject(m_Buttons[0].gameObject);
+        m_CanvasGroup.DOFade(1, 1);
     }
 
     public void ShowDialog(string title, string content, string yes, Action callback)
