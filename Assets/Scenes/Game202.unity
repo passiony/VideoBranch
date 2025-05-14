@@ -3334,7 +3334,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!82 &773269431
 AudioSource:
   m_ObjectHideFlags: 0
@@ -6240,6 +6240,8 @@ MonoBehaviour:
   m_Scenes:
   - 202-11
   - 202-12
+  Mute: 1
+  Archive: 
   OnTrigger1:
     m_PersistentCalls:
       m_Calls: []
@@ -6261,7 +6263,6 @@ MonoBehaviour:
   OnTrigger3:
     m_PersistentCalls:
       m_Calls: []
-  Mute: 1
 --- !u!4 &1614733292
 Transform:
   m_ObjectHideFlags: 0

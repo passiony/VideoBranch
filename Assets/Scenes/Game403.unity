@@ -1198,7 +1198,7 @@ MonoBehaviour:
   _mediaReference: {fileID: 11400000, guid: 7b8a48f17a76b0d449f396690db75ebf, type: 2}
   _mediaPath:
     _pathType: 1
-    _path: "Mp4/\u5267\u60C54.1.mp4"
+    _path: "Mp4/\u5267\u60C54.3.mp4"
   _fallbackMediaHints:
     transparency: 0
     alphaPacking: 0
@@ -7009,10 +7009,6 @@ PrefabInstance:
     - target: {fileID: 3053300462147683022, guid: ff4803b4dc224434ba2c367edbc45d70, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3344913860276582564, guid: ff4803b4dc224434ba2c367edbc45d70, type: 3}
-      propertyPath: m_AdditionalShaderChannelsFlag
-      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 7022336804905123538, guid: ff4803b4dc224434ba2c367edbc45d70, type: 3}
       propertyPath: m_Name

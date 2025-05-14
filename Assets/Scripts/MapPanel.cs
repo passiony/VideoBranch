@@ -7,32 +7,29 @@ public class MapPanel : MonoBehaviour
 {
     public Button closeBtn;
     public static List<string> mapList = new List<string>();
-    private Dictionary<string, GameObject> clouds;
-    AudioSource audioSource;
+    private AudioSource audioSource;
+    private Dictionary<string, string> clouds;
 
     void Awake()
     {
         closeBtn.onClick.AddListener(() => { gameObject.SetActive(false); });
         audioSource = GetComponent<AudioSource>();
-        clouds = new Dictionary<string, GameObject>();
-        clouds["201"] = transform.Find("201").gameObject;
-        clouds["202"] = transform.Find("202").gameObject;
-        clouds["301"] = transform.Find("301").gameObject;
-        clouds["302"] = transform.Find("302").gameObject;
-        clouds["401"] = transform.Find("401").gameObject;
+        clouds = new Dictionary<string, string>();
+        clouds["101"] = "101";
+        clouds["101-201"] = "101-201";
+        clouds["101-201-301"] = "101";
+        clouds["101-201-302"] = "101";
+        clouds["101-201-401"] = "101";
+        clouds["101-201-301-403"] = "101";
+        clouds["101-201-302-403"] = "101";
+        clouds["101-202"] = "101-202";
+        clouds["101-202-301"] = "101";
     }
 
     private void OnEnable()
     {
         if (audioSource)
             audioSource.Play();
-        foreach (var map in mapList)
-        {
-            if (clouds.ContainsKey(map))
-            {
-                clouds[map].SetActive(false);
-            }
-        }
     }
 
     private void OnDisable()
