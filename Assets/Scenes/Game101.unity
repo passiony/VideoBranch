@@ -7657,10 +7657,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3344913860276582564, guid: ff4803b4dc224434ba2c367edbc45d70, type: 3}
-      propertyPath: m_AdditionalShaderChannelsFlag
-      value: 25
-      objectReference: {fileID: 0}
     - target: {fileID: 7022336804905123538, guid: ff4803b4dc224434ba2c367edbc45d70, type: 3}
       propertyPath: m_Name
       value: GamePanel

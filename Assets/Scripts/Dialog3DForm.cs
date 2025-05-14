@@ -42,7 +42,11 @@ public class Dialog3DForm : MonoBehaviour
         m_Buttons[0].gameObject.SetActive(true);
         m_Buttons[0].GetComponentInChildren<TextMeshProUGUI>().text = yes;
         m_Buttons[0].onClick.RemoveAllListeners();
-        m_Buttons[0].onClick.AddListener(() => callback?.Invoke());
+        m_Buttons[0].onClick.AddListener(() =>
+        {
+            Destroy(gameObject,  0.5f);
+            callback?.Invoke();
+        });
     }
 
     public void ShowDialog(string title, string content, string yes, string no, Action yesCallback, Action noCancel)
@@ -77,15 +81,27 @@ public class Dialog3DForm : MonoBehaviour
 
         m_Buttons[0].gameObject.SetActive(true);
         m_Buttons[0].GetComponentInChildren<TextMeshProUGUI>().text = menu1;
-        m_Buttons[0].onClick.AddListener(() => callback1?.Invoke());
+        m_Buttons[0].onClick.AddListener(() =>
+        {
+            Destroy(gameObject,  0.5f);
+            callback1?.Invoke();
+        });
 
         m_Buttons[1].gameObject.SetActive(true);
         m_Buttons[1].GetComponentInChildren<TextMeshProUGUI>().text = menu2;
-        m_Buttons[1].onClick.AddListener(() => callback2?.Invoke());
+        m_Buttons[1].onClick.AddListener(() =>
+        {
+            Destroy(gameObject,  0.5f);
+            callback2?.Invoke();
+        });
 
         m_Buttons[2].gameObject.SetActive(true);
         m_Buttons[2].GetComponentInChildren<TextMeshProUGUI>().text = menu3;
-        m_Buttons[2].onClick.AddListener(() => callback3?.Invoke());
+        m_Buttons[2].onClick.AddListener(() =>
+        {
+            Destroy(gameObject,  0.5f);
+            callback3?.Invoke();
+        });
     }
 
     public void ShowDialog(string title, string content, string[] menes, Action[] callbacks)
@@ -104,7 +120,11 @@ public class Dialog3DForm : MonoBehaviour
             var callback = callbacks[i];
             m_Buttons[i].gameObject.SetActive(true);
             m_Buttons[i].GetComponentInChildren<TextMeshProUGUI>().text = menu;
-            m_Buttons[i].onClick.AddListener(() => callback?.Invoke());
+            m_Buttons[i].onClick.AddListener(() =>
+            {
+                Destroy(gameObject,  0.5f);
+                callback?.Invoke();
+            });
         }
     }
 }
