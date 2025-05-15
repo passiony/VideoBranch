@@ -19,6 +19,7 @@ public class VideoSkip : MonoBehaviour
 
     private void OnSkipClick()
     {
+        m_SkipBtn.gameObject.SetActive(false);
         m_MediaPlayer.Control.Seek(m_SkipTime);
         m_AudioSource.time = m_SkipTime;
     }
