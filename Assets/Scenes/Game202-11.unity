@@ -234,7 +234,7 @@ GameObject:
   - component: {fileID: 48738905}
   - component: {fileID: 48738907}
   m_Layer: 0
-  m_Name: 2.2-1-P
+  m_Name: "\u5267\u60C5\u97F3\u9891"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6011,6 +6011,8 @@ MonoBehaviour:
   m_Scenes:
   - 202-21
   - 202-22
+  Mute: 1
+  Archive: 
   OnTrigger1:
     m_PersistentCalls:
       m_Calls: []
@@ -6032,7 +6034,6 @@ MonoBehaviour:
   OnTrigger3:
     m_PersistentCalls:
       m_Calls: []
-  Mute: 1
 --- !u!4 &1614733292
 Transform:
   m_ObjectHideFlags: 0

@@ -5624,6 +5624,8 @@ MonoBehaviour:
   m_Scenes:
   - 202-31
   - 202-32
+  Mute: 1
+  Archive: 
   OnTrigger1:
     m_PersistentCalls:
       m_Calls: []
@@ -5645,7 +5647,6 @@ MonoBehaviour:
   OnTrigger3:
     m_PersistentCalls:
       m_Calls: []
-  Mute: 1
 --- !u!4 &1614733292
 Transform:
   m_ObjectHideFlags: 0
@@ -6446,7 +6447,7 @@ GameObject:
   - component: {fileID: 1870520346}
   - component: {fileID: 1870520348}
   m_Layer: 0
-  m_Name: 2.2-1-N
+  m_Name: "\u5267\u60C5\u97F3\u9891"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
