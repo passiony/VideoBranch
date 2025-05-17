@@ -6,18 +6,17 @@ using UnityEngine.SceneManagement;
 public class AudioJump : MonoBehaviour
 {
     AudioSource audioSource;
-    
-    void Start()
+
+    void Awake()
     {
         audioSource = gameObject.GetComponent<AudioSource>();
-        StartCoroutine(CheckAudioComplete());
     }
 
-    IEnumerator CheckAudioComplete()
+    void Update()
     {
-        while (audioSource.isPlaying)
-            yield return null;
-
-        SceneManager.LoadScene(0);
+        if (audioSource.time >= audioSource.clip.length - 0.01f)
+        {
+            SceneManager.LoadScene(0);
+        }
     }
 }

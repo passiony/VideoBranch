@@ -14,12 +14,11 @@ public class LaunchPanel : MonoBehaviour
 
     private void Awake()
     {
-        startBtn.onClick.AddListener(() => { SceneManager.LoadScene(1); });
+        startBtn.onClick.AddListener(() =>
+        {
+            MapPanel.ClearMap();
+            SceneManager.LoadScene(1); 
+        });
         mapBtn.onClick.AddListener(() => { mapPanel.SetActive(true); });
-    }
-
-    private void Start()
-    {
-        MapPanel.ClearMap();
     }
 }

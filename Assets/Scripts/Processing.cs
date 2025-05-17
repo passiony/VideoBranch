@@ -69,10 +69,7 @@ public class Processing : MonoBehaviour
             {
                 Debug.Log("跳转到场景：" + m_Scenes[0]);
                 OnTrigger1?.Invoke();
-                if (m_Scenes[0] == "Launch")
-                    SceneManager.LoadScene(m_Scenes[0]);
-                else
-                    SceneManager.LoadScene("Game" + m_Scenes[0]);
+                SceneManager.LoadScene("Game" + m_Scenes[0]);
                 MapPanel.LoadedMap(m_Scenes[0]);
             },
             () =>
